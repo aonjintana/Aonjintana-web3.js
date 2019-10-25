@@ -279,10 +279,10 @@ var inputLogFormatter = function(options) {
             return utils.fromUtf8(value);
     };
 
-    if (options.fromBlock || options.fromBlock === 0)
+    if (options.fromBlock)
         options.fromBlock = inputBlockNumberFormatter(options.fromBlock);
 
-    if (options.toBlock || options.toBlock === 0)
+    if (options.toBlock)
         options.toBlock = inputBlockNumberFormatter(options.toBlock);
 
 
